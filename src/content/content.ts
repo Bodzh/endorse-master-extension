@@ -1,0 +1,1 @@
+import '../style/content.scss';
