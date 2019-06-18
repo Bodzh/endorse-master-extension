@@ -1,0 +1,47 @@
+{
+  "manifest_version": 2,
+  "name": "Endorse Master",
+  "description": "Endorse your connected contacts skills with Endorse Master",
+  "version": "1.0.0",
+  "default_locale": "en",
+  "icons": {
+    "128": "img/icon.png"
+  },
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_popup": "page/popup.html"
+  },
+  "background": {
+    "scripts": [
+      "build/background.js"
+    ]
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "unlimitedStorage",
+    "https://www.linkedin.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.linkedin.com/*"
+      ],
+      "exclude_matches": [
+        "*://www.linkedin.com/csp/*"
+      ],
+      "css": [
+        "build/content.css"
+      ],
+      "js": [
+        "build/content.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "img/*.png",
+    "img/*.svg"
+  ],
+  "content_security_policy": "script-src 'self' https://www.google-analytics.com https://code.jquery.com https://cdnjs.cloudflare.com https://use.fontawesome.com 'unsafe-eval'; object-src 'self'"
+}
