@@ -10,7 +10,8 @@
     "await-promise": true,
     "lib": [ "es6", "dom" ],
     "types": [
-      "chrome"
+      "chrome",
+      "jQuery"
     ]
   },
   "exclude": [

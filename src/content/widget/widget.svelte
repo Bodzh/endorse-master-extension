@@ -1,6 +1,13 @@
 <script>
-    function endorseProfile () {
-        console.log('now endorsing')
+    import EndorseManagerClass from '../class.endorseManager.ts'
+    const EndorseManager = new EndorseManagerClass();
+
+    async function endorseProfile () {
+        console.log('now endorsing');
+
+        await EndorseManager.perform();
+
+        console.log('endorses done')
     }
 </script>
 
