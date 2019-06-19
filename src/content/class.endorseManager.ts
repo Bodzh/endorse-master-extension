@@ -25,7 +25,7 @@ export default class EndorseManager {
         console.log('all done!')
     }
 
-    async clickVeryGood() {
+    async clickVeryGood(): Promise<boolean> {
         return new Promise(function(resolve) {
             let veryGoodBtn = $('#endorsement-followup-proficiency-1-Performance');
 
@@ -37,7 +37,7 @@ export default class EndorseManager {
         });
     }
 
-    async clickSubmit () {
+    async clickSubmit (): Promise<boolean> {
         return new Promise(function(resolve) {
             let submitBtn = $('.pv-endorsement-followup__footer > button');
 
@@ -49,7 +49,7 @@ export default class EndorseManager {
         })
     }
 
-    async scrollPageToMiddle () {
+    async scrollPageToMiddle (): Promise<boolean> {
         return new Promise(function (resolve) {
             let thirdOfHeight = Math.floor(document.body.clientHeight/3);
 
@@ -61,7 +61,7 @@ export default class EndorseManager {
         });
     }
 
-    async scrollPageToBottom () {
+    async scrollPageToBottom (): Promise<boolean> {
         return new Promise(function (resolve) {
             scroll(0, document.body.clientHeight);
 
