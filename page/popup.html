@@ -3,14 +3,24 @@
 <head>
     <meta charset="utf8">
     <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" rel="stylesheet">
+    <link href="/build/popup.css" rel="stylesheet">
 </head>
 <body>
-    <ol>
-        <li><h4>Go to your contacts profile page</h4></li>
-        <li><h4>Press Endorse</h4></li>
-        <li><h4>Wait a few seconds</h4></li>
-        <li><h4>Done!)</h4></li>
-    </ol>
-    <script src="/build/popup.js"></script>
+    <div class="container popup-wrapper pt-3">
+    <ul class="list-group list-group-flush">
+        <ul class="to-do-list list-group">
+            <li class="d-flex flex-row list-group-item"><i class="material-icons mr-3">directions_run</i> <h5>Go to your contacts profile page</h5></li>
+            <li class="d-flex flex-row align-items-center list-group-item">
+                <i class="material-icons mr-3">touch_app</i>
+                <h5 class="m-0">Press</h5>
+                <div class="ml-2 endorse-widget-button">Endorse Skills</div>
+            </li>
+            <li class="d-flex flex-row list-group-item"><i class="material-icons mr-3">access_time</i><h5>Wait a few seconds</h5></li>
+            <li class="d-flex flex-row list-group-item"><i class="material-icons mr-3">check</i><h5>Done!)</h5></li>
+        </ul>
+    </ul>
+    <script src="../build/popup.js"></script>
+    </div>
 </body>
 </html>

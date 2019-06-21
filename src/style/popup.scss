@@ -1,4 +1,23 @@
-.widget-prepend-block {
-  z-index: 102;
-  position: absolute
+@import "variables";
+
+.popup-wrapper {
+  font-family: $font-family-primary;
+  height: 245px;
+  width: 400px!important;
+}
+
+.to-do-list {
+  list-style: none;
+}
+
+.endorse-widget-button {
+  $width: 80px;
+  font-size: $font-size-small;
+  min-width: $width;
+  max-height: $width/2;
+  padding: 8px 15px;
+  background-color: deepskyblue;
+  color: white;
+  border-radius: $width/4;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
 }
