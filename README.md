@@ -1,5 +1,5 @@
 # endorse-master-extension
-This is a simple Chrome extension for auto endorsing LinkedIn profiles. Based on the simple endorse-bot script https://github.com/Bodzh/linkedin-endorse-bot
+This is a simple Chrome extension for auto endorsing LinkedIn profiles. Based on the simple endorse-bot script https://github.com/Bodzh/linkedin-endorse-bot . Now you can install extension in Chrome Web Store https://chrome.google.com/webstore/detail/endorse-master/akmbgaaodbdcdellbkfmelcahkmegjan
 
 <h2>How to deploy</h2>
 <ul>
