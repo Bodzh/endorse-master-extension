@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "LinkedIn Endorse Master",
+  "name": "Endorse Master",
   "description": "Endorse your connected LinkedIn contacts skills with Endorse Master",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "default_locale": "en",
   "icons": {
     "128": "img/icon.png"
