@@ -25,6 +25,7 @@
   "dependencies": {
     "chrome-promise": "^3.0.5",
     "jquery": "^3.4.1",
+    "lodash": "^4.17.15",
     "mdbootstrap": "^4.8.2",
     "popper.js": "^1.15.0",
     "svelte": "^3.5.1"

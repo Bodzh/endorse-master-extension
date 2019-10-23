@@ -1,3 +1,4 @@
+import {selectors} from './selectors.ts';
 
 export default class EndorseManager {
 
@@ -6,9 +7,9 @@ export default class EndorseManager {
 
         await this.scrollPageToMiddle();
 
-        $('.pv-skills-section__additional-skills').click();
+        $(selectors.endorses.openSkills).click();
 
-        let endorses = $('.pv-skill-entity__featured-endorse-button-shared[aria-pressed="false"]');
+        let endorses = $(selectors.endorses.uncheckedSkills);
 
         console.log('endorses available', endorses.length);
 
@@ -20,14 +21,14 @@ export default class EndorseManager {
             this.clickVeryGood();
         }
 
-        $('.artdeco-hoverable-content__close-btn').click();
+        $(selectors.endorses.closeModalBtn).click();
 
         console.log('all done!')
     }
 
     async clickVeryGood(): Promise<boolean> {
         return new Promise(function(resolve) {
-            let veryGoodBtn = $('#endorsement-followup-proficiency-1-Performance');
+            let veryGoodBtn = $(selectors.endorses.veryGoodBtn);
 
             veryGoodBtn.click();
 
@@ -39,7 +40,7 @@ export default class EndorseManager {
 
     async clickSubmit (): Promise<boolean> {
         return new Promise(function(resolve) {
-            let submitBtn = $('.pv-endorsement-followup__footer > button');
+            let submitBtn = $(selectors.endorses.submitBtn);
 
             submitBtn.click();
 
